@@ -1,0 +1,239 @@
+/* ESTILIZAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+/* FIM DAS ESTILIZAÇÕES GLOBAIS */
+/* LIMITE HORIZONTAL DO CONTEÚDO */
+.containner {
+    max-width: 90%;
+}
+/* ESTILIZAÇÃO CABEÇALHO */
+header {
+    background-color: #00CAD1;
+}
+.top {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.top img {
+    width: 180px;
+}
+.links-menu-superior a {
+    margin: 0 20px;
+    color: #fff;
+    font-size: 25px;
+}
+/* FIM DA ESTILIZAÇÃO DO CABEÇALHO */
+/* INÍCIO DA ESTILIZAÇÃO DO BANNER */
+.banner {
+    height: 700px;
+    width: 100vw;
+    background-image: url(../img/recepcao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.msg-banner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 50px;
+}
+/* FIM DA ESTILIZAÇÃO DO BANNER */
+/* ESTILIZAÇÃO SESSÃO SOSBRE */
+.sobre {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #787576;
+    text-align: center;
+}
+.sobre p {
+    font-size: 25px;
+}
+.box-sobre {
+    display: flex;
+    margin: 30px;
+    
+}
+.box-sobre img {
+    width: 250px;
+}
+.lista-sobre {
+    margin: 50px;
+}
+li {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
+/* FIM DA ESTILIZAÇÃO DA SESSÃO SOBRE */
+/* ESTILIZAÇÃO DA SESSÃO ESPECIALIDADES */
+.especialidades {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #787576;
+    text-align: center;
+}
+.especialidades button {
+    margin: 50px;
+    padding: 20px 25px;
+    background-color: #00C9D3;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+}
+.msg-especialidades p {
+    font-size: 25px;
+    margin: 30px;
+}
+.box-especialidades {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.especialidade {
+    box-shadow: 5px 5px 10px 5px #737373;
+    margin: 0 20px;
+}
+.especialidade img {
+    width: 100%;
+}
+.especialidade p {
+    margin: 10px;
+    font-size: 20px;
+    color: #787576;
+}
+/* FIM DA ESTILIZAÇÃO ESPECIALIDADES */
+/* ESTILIZAÇÃO CONTATO */
+.contato {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #787576;
+    text-align: center;
+}
+.contato p {
+    margin: 10px;
+}
+.contato span {
+   font-weight: bold;
+}
+/* FIM DA ESTILIZAÇÃO CONTATO */
+/* ESTILIZAÇÃO MAPA */
+.localizacao {
+    margin: 0 auto;
+}
+iframe {
+    width: 100%;
+    margin-bottom: 40px;
+}
+/* FIM DA ESTILIZAÇÃO DO MAPA */
+/* ESTILIZAÇÃO DO RODAPÉ */
+footer {
+    background-color: #0C6E71;
+    color: #fff;
+    margin-top: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.box-footer {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.box-footer p {
+    margin: 20px;
+}
+.box-footer img {
+    margin-top: 40px;
+}
+/* FIM DA ESTILIZAÇÃO DO RODAPÉ */
+/* ESTILIAÇÃO RESPONSIVIDADE ATÉ 425PX*/
+@media all and (max-width:425px) {
+    
+    .top {
+        flex-direction: column;
+        height:auto;
+    }
+
+    .links-menu-superior {
+        border-top: 1px solid rgb(129, 129, 129);
+        padding: 20px 0;
+    }
+
+    .links-menu-superior a {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .links-menu-superior a:nth-of-type(2) {
+        margin: 0 10px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .msg-banner {
+        font-size: 30px;
+    }
+
+    .box-sobre img {
+        display: none;
+    }
+
+    .box-especialidades {
+        flex-direction: column;
+    }
+    
+    .box-especialidades a{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+}
+/* ESPONSIVIDADE ATÉ 768PX*/
+@media all and (max-width:768px) {
+    
+    .top {
+        height:auto;
+    }
+
+    .links-menu-superior a {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .links-menu-superior a:nth-of-type(2) {
+        margin: 0 20px;
+    }
+
+    .banner {
+        height: 500px;
+    }
+
+    .msg-banner {
+        font-size: 40px;
+    }
+
+    .box-sobre img {
+        display: none;
+    }
+
+
+}
