@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;    
+    font-family: 'Source Sans Pro', sans-serif;
 }
 /* FIM DAS ESTILIZAÇÕES GLOBAIS */
 /* LIMITE HORIZONTAL DO CONTEÚDO */
@@ -29,6 +29,7 @@ header {
     margin: 0 20px;
     color: #fff;
     font-size: 25px;
+    font-weight: bold;
 }
 /* FIM DA ESTILIZAÇÃO DO CABEÇALHO */
 /* INÍCIO DA ESTILIZAÇÃO DO BANNER */
@@ -64,7 +65,7 @@ header {
 .box-sobre {
     display: flex;
     margin: 30px;
-    
+
 }
 .box-sobre img {
     width: 250px;
@@ -184,6 +185,7 @@ footer {
     .links-menu-superior a {
         font-size: 20px;
         margin: 10px 10px;
+        font-weight: bold;
     }
     .banner {
         height: 50vh;
@@ -232,5 +234,66 @@ footer {
 
 
 }
-
 /* ESTILIZAÇÃO RESPONSIVA 426px à 768px */
+@media (min-width: 426px) and (max-width:768px) {
+    .top {
+        display: flex;
+        justify-content: space-between ;
+        height: 100%;
+    }
+    .top img {
+        width: 100px;
+    }
+    .links-menu-superior {
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .links-menu-superior a {
+        font-size: 16px;
+        margin: 10px 10px;
+        font-weight: bold;
+    }
+    .banner {
+        height: 60vh;
+    }
+    .msg-banner p {
+        font-size: 30px;
+    }
+    .sobre h1 {
+        font-size: 25px;
+    }
+    .sobre p {
+        font-size: 20px;
+    }
+    .box-sobre img {
+        display: none;
+    }
+    .box-sobre h2 {
+        font-size: 20px;
+    }
+    .lista-sobre ul li {
+        width: auto;
+        margin: 10px;
+        text-align: left;
+    }
+    .msg-especialidades h2 {
+        font-size: 25px;
+    }
+    .msg-especialidades p {
+        font-size: 20px;
+    }
+    .box-especialidades {
+        flex-direction: column;
+    }
+    .box-especialidades a {
+        margin: 10px;
+    }
+    .box-footer img {
+        width: 150px;
+    }
+    .box-footer p {
+       font-size: 15px;
+    }
+
+}
