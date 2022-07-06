@@ -164,3 +164,73 @@ footer {
 }
 /* FIM DA ESTILIZAÇÃO DO RODAPÉ */
 
+
+/* ESTILIZAÇÃO RESPONSIVA 320px à 425px */
+@media (min-width:320px) and (max-width:425px) {
+    .top {
+        flex-direction: column;
+        height: 100%;
+    }
+    .top img {
+        width: 100px;
+        margin: 20px;
+    }
+    .links-menu-superior {
+        border-top: 1px solid gray ;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .links-menu-superior a {
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    .banner {
+        height: 50vh;
+    }
+    .msg-banner p {
+        font-size: 25px;
+    }
+    .sobre h1 {
+        font-size: 25px;
+    }
+    .sobre p {
+        font-size: 20px;
+    }
+    .box-sobre img {
+        display: none;
+    }
+    .box-sobre h2 {
+        font-size: 20px;
+    }
+    .lista-sobre ul li {
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+    }
+    .msg-especialidades h2 {
+        font-size: 25px;
+    }
+    .msg-especialidades p {
+        font-size: 20px;
+    }
+    .box-especialidades {
+        flex-direction: column;
+    }
+    .box-especialidades a {
+        margin: 10px;
+    }
+    .box-footer img {
+        width: 150px;
+    }
+    .box-footer p {
+       font-size: 15px;
+    }
+
+
+
+
+
+}
+
+/* ESTILIZAÇÃO RESPONSIVA 426px à 768px */
