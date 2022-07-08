@@ -165,9 +165,8 @@ footer {
 }
 /* FIM DA ESTILIZAÇÃO DO RODAPÉ */
 
-
-/* ESTILIZAÇÃO RESPONSIVA 320px à 425px */
-@media (min-width:320px) and (max-width:425px) {
+/* ESTILIZAÇÃO RESPONSIVA ATÉ à 425px */
+@media (max-width:425px) {
     .top {
         flex-direction: column;
         height: 100%;
@@ -228,10 +227,6 @@ footer {
     .box-footer p {
        font-size: 15px;
     }
-
-
-
-
 
 }
 /* ESTILIZAÇÃO RESPONSIVA 426px à 768px */
@@ -296,4 +291,16 @@ footer {
        font-size: 15px;
     }
 
+}
+/* ESTILIZAÇÃO RESPONSIVA 769px à 1024px */
+@media (min-width: 769px) and (max-width:1024px) {
+    .containner {
+        max-width: 80%;
+    }
+}
+/* ESTILIZAÇÃO RESPONSIVA acima 1024px */
+@media (min-width:1025px) {
+    .containner {
+        max-width: 70%;
+    }
 }
